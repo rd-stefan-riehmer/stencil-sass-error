@@ -1,4 +1,5 @@
 import { Config } from '@stencil/core';
+import { sass } from '@stencil/sass';
 
 export const config: Config = {
   namespace: 'stencil-components',
@@ -23,4 +24,5 @@ export const config: Config = {
   testing: {
     browserHeadless: "shell",
   },
+  plugins: [sass()]
 };
